@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+img {
+    @apply rounded-lg;
+}
+.rainbow-text {
+    background: linear-gradient(
+      -45deg,
+      #ff3a4c,
+      #ff6f5e,
+      #ffae63,
+      #f9d423,
+      #96e93d,
+      #00c6a7,
+      #1995ad,
+      #9d4edd
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+    text-align: center;
+    animation: gradient 15s ease infinite;
+  }
+  .rainbow-textv2 {
+    background: linear-gradient(
+      -45deg,
+      #ff3a4c,
+      #ff6f5e,
+      #ffae63,
+      #f9d423,
+      #96e93d,
+      #00c6a7,
+      #1995ad,
+      #9d4edd
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    animation: gradient 5s ease infinite;
+  }
+.animated-bg {
+    width: 100vw;
+    padding-top: 100px;
+    background: linear-gradient(
+      -45deg,
+      #ff3a4c,
+      #ff6f5e,
+      #ffae63,
+      #f9d423,
+      #96e93d,
+      #00c6a7,
+      #1995ad,
+      #9d4edd
+    );
+    background-size: 1600% 1600%;
+    position: relative;
+    animation: gradient 5s ease infinite;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
